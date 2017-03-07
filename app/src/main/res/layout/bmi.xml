@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimary"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="8dip"
+        >
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/bmiindex"
+                  android:textSize="26dp"
+                  android:textStyle="bold"
+                  android:textColor="@color/white"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="90dp"
+                  android:id="@+id/textView"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/height"
+                  android:textSize="16dp"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:layout_marginTop="25dp"
+                  android:layout_marginLeft="20dp"
+                  android:id="@+id/textView2"
+            />
+        <EditText
+            android:id="@+id/feet_value"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/feet"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/ft"
+                  android:textSize="16dp"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:layout_marginTop="25dp"
+                  android:layout_marginLeft="5dp"
+                  android:id="@+id/ft"
+            />
+        <EditText
+            android:id="@+id/inch_value"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="@color/white"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/inch"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/in"
+                  android:textSize="16dp"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:layout_marginTop="25dp"
+                  android:layout_marginLeft="5dp"
+                  android:id="@+id/in"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/weight"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:textColor="@color/white"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:id="@+id/textView3"
+            />
+        <EditText
+            android:id="@+id/lb_value"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/lbs"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/lb"
+                  android:textSize="16dp"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:layout_marginTop="25dp"
+                  android:layout_marginLeft="5dp"
+                  android:id="@+id/lb"
+            />
+    </LinearLayout>
+
+    <Button android:id="@+id/btnbmiIndex"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:layout_marginTop="20dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:onClick="computeBMI"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16dp"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_marginLeft="35dp"
+              android:id="@+id/bmivalue"
+        />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/chart"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button android:id="@+id/btnBack"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:onClick="finishBMI"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"/>
+
+</LinearLayout>

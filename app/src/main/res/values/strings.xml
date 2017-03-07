@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Fitness Tracker</string>
+    <string name="desc">Count the steps you walk, heartrate and sleep </string>
+    <string name="action_settings">Settings</string>
+    <string name="close">Close App</string>
+    <string name="closedialog">Close</string>
+    <string name="back">Main Menu</string>
+    <string name="default_text">-- bpm</string>
+    <string name="heartrate">Heart Rate Monitor</string>
+    <string name="heartinst">Hold the tip of your index finger over the camera lens of your phone and cover it for few seconds. Heart icon flashes and it senses a heart beat. After ten seconds it computes your heart rate and update the number next to the icon</string>
+    <string name="stepcounter">Watch your Steps</string>
+    <string name="bmiindex">BMI Calculator</string>
+    <string name="height">Enter your Height</string>
+    <string name="feet">feet</string>
+    <string name="inch">inches</string>
+    <string name="weight">Enter Your Weight</string>
+    <string name="lbs">pounds</string>
+    <string name="calculate">Calculate BMI</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
+    <string name="lb">lbs</string>
+    <string name="walk">Workout Tracker</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="stat">Total Burn Down</string>
+    <string name="history">Previous Workouts</string>
+    <string name="dialog_text">THis is a dialog</string>
+    <string name="download">Walk and Diet Plan(pdf)</string>
+    <string name="diet_url">https://www.healthpromotion.ie/hp-files/docs/HPM00796.pdf</string>
+    <string name="walk_url">http://www.heart.org/idc/groups/heart-public/@wcm/@fc/documents/downloadable/ucm_449261.pdf</string>
+</resources>

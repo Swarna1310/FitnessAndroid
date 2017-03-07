@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/walk1">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/walk"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp">
+    <Button android:id="@+id/btnStart"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:layout_marginTop="20dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:onClick="startCounter"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"/>
+    <Button android:id="@+id/btnStop"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:onClick="stopCounter"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"/>
+        </LinearLayout>
+
+    <TextView
+    android:id="@+id/textView1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="20dp"
+    android:textSize="16dp"
+    android:textColor="@color/black"
+    android:layout_marginLeft="120dp"
+    android:textStyle="bold"/>
+<TextView
+android:id="@+id/textView2"
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:layout_marginTop="20dp"
+android:textSize="16dp"
+android:textColor="@color/black"
+android:layout_marginLeft="120dp"
+android:textStyle="bold"/>
+
+ <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="120dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp">
+        <Button android:id="@+id/btnStat"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/stat"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:onClick="getTotalStat"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"/>
+        <Button android:id="@+id/btnPrevworkout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/history"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:onClick="getPrevWorkouts"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnBack"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:onClick="finishStep"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"/>
+
+</LinearLayout>
